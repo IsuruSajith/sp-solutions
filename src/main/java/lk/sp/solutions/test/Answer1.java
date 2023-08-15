@@ -19,5 +19,19 @@ public class Answer1 {
             i++;
         }
         System.out.println(sum);
+
+        sum=0;
+
+        calSum(numbers, sum, 0);
+
+    }
+
+    public static void calSum(int[] numbers, int sum, int i) {
+        if (i<numbers.length) {
+            sum+=numbers[i];
+            i++;
+            calSum(numbers,sum,i);
+        }
+        System.out.println(sum);
     }
 }
