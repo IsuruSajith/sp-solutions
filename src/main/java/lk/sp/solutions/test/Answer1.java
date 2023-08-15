@@ -11,5 +11,13 @@ public class Answer1 {
             sum += numbers[i];
         }
         System.out.println(sum);
+
+        sum=0;
+        int i=0;
+        while (i<numbers.length) {
+            sum += numbers[i];
+            i++;
+        }
+        System.out.println(sum);
     }
 }
